@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+    <div class="rectangle2">
+      <img class = "frame2" src="Logo/Frame2.png" alt="Kinopark.kz">
+
+      <div class="frame">
+        <img class="map-marker-alt" src="Frame/map-marker-alt.png" alt="map">
+
+        <div class="selectCity">
+          <form>
+            <select class="stateSelect">
+              <option class = "city_name" value="" >Нур-Султан</option>
+              <option class = "city_name default_city_name" selected="selected" value="">Алматы</option>
+              <option class = "city_name" value="">Шымкент</option>
+              <option class = "city_name" value="">Актау</option>
+              <option class = "city_name" value="">Актобе</option>
+              <option class = "city_name" value="">Актау</option>
+              <option class = "city_name" value="">Караганда</option>
+              <option class = "city_name" value="">Кызылорда</option>
+              <option class = "city_name" value="">Уральск</option>
+            </select>
+          </form>
+        </div>        
+
+        <img class="caret_down_city" src="Frame/color.png" alt="map">
+
+      </div>
+
+      <div class="group">
+        <div class="groupLists" onclick="$('.afisha').show() 
+        $('.soon').hide() 
+        $('.food_drinks').hide()
+        $('.ikinopark').hide()">Расписание</div>
+        <div class="groupLists" onclick="$('.afisha').hide() 
+        $('.food_drinks').hide()
+        $('.soon').show()
+        $('.ikinopark').hide()">Скоро</div>
+        <div class="groupLists" onclick="$('.afisha').hide() 
+        $('.soon').hide() 
+        $('.food_drinks').show()
+        $('.ikinopark').hide()">Еда и напитки</div>
+        <div class="groupLists" onclick="$('.afisha').hide() 
+        $('.soon').hide() 
+        $('.food_drinks').hide()
+        $('.ikinopark').show()">Мой Kinopark</div>
+      </div>
+
+      <div class="profile">Вход/Регистрация</div>
+      
+      <div class="lang">
+        <div class="selectLang">
+          <form>
+            <select>
+              <option class = "lang_name" value="" >Қазақша</option>
+              <option class = "lang_name default_lang_name" selected="selected" value="">Русский </option>
+              <option class = "lang_name" value="">English</option>
+            </select>
+          </form>
+        </div>
+
+        <img class="caret_down_lang" src="Frame/color.png" alt="map">
+      </div>
+
+      <div class="bars" onclick="$('.frame').hide() 
+      $('.frame2').hide() 
+      $('.bars').hide()
+      $('.profile').show()
+      $('.lang').show()
+      $('.times').show()
+      $('.main_menu').show()
+      $('.afisha').show()
+      $('.number').show()
+      $('.soon').show()
+      $('eda_napitki').show()">
+        <img src="Frame/bars.png">
+      </div>
+
+      <div class="times" onclick="$('.frame').show() 
+      $('.frame2').show() 
+      $('.bars').show()
+      $('.profile').hide()
+      $('.lang').hide()
+      $('.times').hide()
+      $('.main_menu').hide()">
+        <img src="Frame/times.png">
+      </div>
+
+    </div> 
+
+    <div class="main_menu">
+
+      <div class="afisha">
+        <div class="afisha_left_1">
+          <p class="films film1">Фильмы</p>
+          <p class="films film2">Расписание</p>
+          <p class="films">Сегодня в кино</p>
+          <p class="films">Предпродажи</p>
+          <div class="film3">
+            <p class="imax_text">Фильмы в </p>
+            <img class="imax_img" src="Frame/Imax.png">
+          </div>
+          <div class="films films_arrow">Подробнее о фильмах
+            <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.3536 4.85355C16.5488 4.65829 16.5488 4.34171 16.3536 4.14645L13.1716 0.964466C12.9763 0.769204 12.6597 0.769204 12.4645 0.964466C12.2692 1.15973 12.2692 1.47631 12.4645 1.67157L15.2929 4.5L12.4645 7.32843C12.2692 7.52369 12.2692 7.84027 12.4645 8.03553C12.6597 8.2308 12.9763 8.2308 13.1716 8.03553L16.3536 4.85355ZM16 4L0 4V5L16 5V4Z" fill="white"/>
+            </svg>
+          </div>
+        </div>
+        
+        <hr class="afisha_left_line">
+
+        <div class="afisha_left_2">
+          <p class="exclusive_text">Эксклюзив</p>
+          <p class="films film2">Эксклюзив</p>
+          <p class="exclusive_text film1">Театр в кино</p>
+          <p class="exclusive_text exclusive_text_mob">Театр HD</p>
+          <p class="exclusive_text">Original version</p>
+          <p class="exclusive_text">Концерты и фестивали</p>
+          <p class="exclusive_text">Документальное кино</p>
+          <div class="films films_arrow exclusive_arrow">Подробнее о эксклюзиве
+            <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.3536 4.85355C16.5488 4.65829 16.5488 4.34171 16.3536 4.14645L13.1716 0.964466C12.9763 0.769204 12.6597 0.769204 12.4645 0.964466C12.2692 1.15973 12.2692 1.47631 12.4645 1.67157L15.2929 4.5L12.4645 7.32843C12.2692 7.52369 12.2692 7.84027 12.4645 8.03553C12.6597 8.2308 12.9763 8.2308 13.1716 8.03553L16.3536 4.85355ZM16 4L0 4V5L16 5V4Z" fill="white"/>
+            </svg>
+          </div>
+        </div>
+
+        <hr class="afisha_left_line afisha_left_line1">
+
+
+        <hr class="line">
+
+        <div class="afisha_right">
+          <div class="afisha_right_text1">Сегодня в кино</div>
+          <div class="afisha_right_text2">Все сеансы
+          <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16.3536 4.85355C16.5488 4.65829 16.5488 4.34171 16.3536 4.14645L13.1716 0.964466C12.9763 0.769204 12.6597 0.769204 12.4645 0.964466C12.2692 1.15973 12.2692 1.47631 12.4645 1.67157L15.2929 4.5L12.4645 7.32843C12.2692 7.52369 12.2692 7.84027 12.4645 8.03553C12.6597 8.2308 12.9763 8.2308 13.1716 8.03553L16.3536 4.85355ZM16 4L0 4V5L16 5V4Z" fill="white"/>
+          </svg>
+          </div>
+        </div>
+
+        <div class="list_of_films">
+          <div class="films_text">
+            <img class="films_png" src="Films/lionKing.png">
+            Король Лев
+          </div>
+          <div class="films_text">
+            <img class="films_png" src="Films/taParochka.png">
+            Та еще парочка
+          </div>
+          <div class="films_text">
+            <img class="films_png" src="Films/istoriya.png">
+            История игрушек
+          </div>
+          <div class="films_text">
+            <img class="films_png" src="Films/zaMechtoi.png">
+            За мечтой
+          </div>
+        </div>
+
+      </div>
+
+      <div class="eda_napitki">
+        <div>
+          <p class="films film2">Еда и напитки</p>
+          <p class="films product_bar">Продукция бара</p>
+        </div>
+        <p class="films product_bar_soon ">Скоро</p>
+        
+      </div>
+    
+      <hr class="afisha_left_line eda_napitki_line">
+
+      <div class="soon">
+        <div class="soon_text">
+          <div class="soon_text1">Скоро на экранах Kinopark и Kinoplexx</div>
+          <div class="soon_text2">Смотреть все предстоящие фильмы
+            <svg width="17" height="9" viewBox="0 0 17 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.3536 4.85355C16.5488 4.65829 16.5488 4.34171 16.3536 4.14645L13.1716 0.964466C12.9763 0.769204 12.6597 0.769204 12.4645 0.964466C12.2692 1.15973 12.2692 1.47631 12.4645 1.67157L15.2929 4.5L12.4645 7.32843C12.2692 7.52369 12.2692 7.84027 12.4645 8.03553C12.6597 8.2308 12.9763 8.2308 13.1716 8.03553L16.3536 4.85355ZM16 4L0 4V5L16 5V4Z" fill="white"/>
+            </svg>
+          </div>
+        </div>
+        <p class="films film2 film_soon">Скоро</p>        
+        
+        <div class="soon_films">
+          <div class="films_text films_text_mob">
+            <img class="sales_png" src="Frame/sales.png">
+            <img class="age_png" src="Frame/agerec.png">
+            <div class="age_text">6+</div>
+            <img class="date_png" src="Frame/daterec.png">
+            <div class="date_text">с 18.07.2019</div>
+            <img class="films_png films_png_bts" src="Films/bts.png">
+            BTS: Bring the Soul. The movie
+          </div>
+          <div class="films_text">
+            <img class="sales_png" src="Frame/sales.png">
+            <img class="age_png" src="Frame/agerec.png">
+            <div class="age_text">16+</div>
+            <img class="date_png" src="Frame/daterec.png">
+            <div class="date_text">с 25.07.2019</div>
+            <img class="films_png" src="Films/pavarotti.png">
+            Паваротти
+          </div>
+          <div class="films_text">
+            <img class="sales_png" src="Frame/sales.png">
+            <img class="age_png" src="Frame/agerec.png">
+            <div class="age_text">16+</div>
+            <img class="date_png" src="Frame/daterec.png">
+            <div class="date_text">с 18.07.2019</div>
+            <img class="films_png" src="Films/vidok.png">
+            Видок: Охотник на призраков
+          </div>
+          <div class="films_text">
+            <img class="age_png" src="Frame/agerec.png">
+            <div class="age_text">6+</div>
+            <img class="date_png" src="Frame/daterec.png">
+            <div class="date_text">с 25.07.2019</div>
+            <img class="films_png" src="Films/robot.png">
+            Мой друг робот
+          </div>
+          <div class="films_text">
+            <img class="age_png" src="Frame/agerec.png">
+            <div class="age_text">6+</div>
+            <img class="date_png" src="Frame/daterec.png">
+            <div class="date_text">с 25.07.2019</div>
+            <img class="films_png" src="Films/remi.png">
+            Приключения Реми
+          </div>
+          <div class="films_text">
+            <img class="age_png" src="Frame/agerec.png">
+            <div class="age_text">12+</div>
+            <img class="date_png" src="Frame/daterec.png">
+            <div class="date_text">с 25.07.2019</div>
+            <img class="films_png" src="Films/shagvpered.png">
+            Шаг вперед 6: Год танцев
+          </div>
+          <div class="films_text">
+            <img class="age_png" src="Frame/agerec.png">
+            <div class="age_text">16+</div>
+            <img class="date_png" src="Frame/daterec.png">
+            <div class="date_text">с 31.07.2019</div>
+            <img class="films_png" src="Films/synovya.png">
+            Все мои сыновья
+          </div>
+          <div class="films_text">
+            <img class="age_png" src="Frame/agerec.png">
+            <div class="age_text">18+</div>
+            <img class="date_png" src="Frame/daterec.png">
+            <div class="date_text">с 01.08.2019</div>
+            <img class="films_png" src="Films/pesn.png">
+            Песнь Дьявола
+          </div>
+          <div class="films_text">
+            <img class="age_png" src="Frame/agerec.png">
+            <div class="age_text">6+</div>
+            <img class="date_png" src="Frame/daterec.png">
+            <div class="date_text">с 01.08.2019</div>
+            <img class="films_png" src="Films/ruslan.png">
+            Руслан и Людмила: 
+          </div>
+        </div>
+
+      </div>
+      
+      <hr class="afisha_left_line soon_line">
+
+      <div class="food_drinks">
+        
+        <div class="food_soon">Скоро...</div>
+        <div class="food_drinks_blur">
+          <div class="food_left">
+            <p class="food_text food_text1">Продукция бара</p>
+            <p class="food_text">Комбо меню</p>
+            <p class="food_text">Попкорны</p>
+            <p class="food_text">Напитки</p>
+            <p class="food_text2">Dine-in experience </p>
+          </div>
+
+          <hr class="food_line">
+
+          <div class="food_right">
+            <img src="fooddrinks/foods.png">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="number">
+        <div class="films film2">Служба поддержки</div>
+        <div class="ikinopark3_text">+7 (702) 000 6068</div>
+      </div>
+
+      <hr class="afisha_left_line number_line">
+
+      <div class="ikinopark">
+        <div class="ikinopark1">
+          <p class="ikinopark1_text">Спец. предложения</p>
+          <p class="ikinopark1_text">Беспредельный Понедельник</p>
+          <p class="ikinopark1_text">СуперВторник</p>
+          <p class="ikinopark1_text">FunСреда</p>
+          <p class="ikinopark1_text">Kinopark Collection</p>
+          <p class="kinoPass">Подписка KinoPass</p>
+        </div>
+
+        <div class="ikinopark2">
+          <p class="ikinopark1_text">Особые услуги</p>
+          <p class="ikinopark1_text">Premium залы</p>
+          <p class="ikinopark1_text">Пледь в кинозал</p>
+          <p class="ikinopark1_text">Для людей с ограниченными возможностями</p>
+          <p class="ikinopark1_text ikinopark1_text_last">Технологии</p>
+          <div class="imax">
+            <p class="imax1">IMAX</p>
+            <p class="imax1">Dolby Atmos</p>
+            <p class="imax1">Laser</p>
+          </div>
+        </div>
+        
+        <div class="ikinopark3">
+          <div>
+            <p class="ikinopark1_text">Часто задаваемые вопросы</p>
+            <p class="ikinopark1_text">Покупка/возврат билетов</p>
+            <p class="ikinopark1_text">Политика конфиденциальности</p>
+          </div>
+
+          <hr class="ikinopark_line">
+
+          <div class="ikinopark3_text_div">
+            <div class="ikinopark3_text">Служба поддержки</div>
+            <div class="ikinopark3_text">+7 (702) 000 6068</div>
+          </div>
+        </div>
+        
+        <div class="ikinopark4">
+          <p class="ikinopark1_text">О компании</p>
+          <p class="ikinopark1_text">О нас</p>
+          <p class="ikinopark1_text">Кинотеатры</p>
+          <p class="ikinopark1_text">Для бизнеса</p>
+          <p class="ikinopark1_text">Партенры</p>
+          <p class="ikinopark1_text">Новости</p>
+          <p class="ikinopark1_text">Контакты</p>
+
+        </div>
+
+      </div>
+      
+      <div class="number ikinopark_mob">
+        <div class="films film2">Мой кинопарк</div>
+        <p class="exclusive_text">Специальные предложения</p>
+        <p class="exclusive_text">Новости</p>
+        <p class="exclusive_text">Особые услуги</p>
+        <p class="exclusive_text">Технологии</p>
+        <p class="exclusive_text">Часто задаваемые вопросы</p>
+        <p class="exclusive_text">О компании</p>
+      </div>
+      
+    </div>
+    
+  </header>
+  </body>
+</html
