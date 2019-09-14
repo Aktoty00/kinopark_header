@@ -755,12 +755,16 @@
         top: 719px;
         overflow-x: scroll;
     }
+    .films_pavarotti{
+        display: none;
+    }
     .films_text{
         padding-right: 16px;
     }
     .films_text_mob{
         display: block;
     }
+    
     .film_soon{
         padding-top: 680px;
     }
