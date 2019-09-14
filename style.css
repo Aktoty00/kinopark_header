@@ -4,12 +4,7 @@
     left: 0px;
     right: 0px;
     top: 0px;
-
-    /* BW/Main black */
-
     background: #0E0E0E;
-    /* nav-shadow */
-
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
     border-bottom: 1px solid #4E4E4E;
 }
@@ -87,8 +82,6 @@
 
 .city_name{
     position: absolute;
-    
-    /* BW/Main white */
     color: #0E0E0E;
     background: #FFFFFF;
     height: 70px;
@@ -133,8 +126,6 @@
     left: 1028px;
     top: 23px;
 
-    /* Subbody/Subbody Bold */
-
     color: white;
     font-size: 13px;
     padding: 10px 20px;
@@ -161,13 +152,10 @@
     position: absolute;
     width: 20px;
     height: 18px;
-    /* Subbody/Subbody Bold */
-
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 13px;
-    /* identical to box height */
 
     border: none;
     color: #FFFFFF;
@@ -192,8 +180,6 @@
     background: #0E0E0E;
 }
 
-
-
 .main_menu{
     position: relative;
     left: 0%;
@@ -203,7 +189,6 @@
     width: 100%;
     height: 307px;
     background: linear-gradient(101.42deg, #0E0E0E 0%, #210A0B 100%);
-    /* nav-shadow */
 
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
     border-bottom: 1px solid #4E4E4E;
@@ -215,7 +200,6 @@
     height: 243px;
     left: 200px;
     top: 32px;
-    /* display: none; */
 }
 
 .afisha_left_1{
@@ -230,8 +214,6 @@
     left: 16px;
     top: 190px;
     display: none;
-    /* BW/Grey */
-
     background: #4E4E4E;
     opacity: 0.5;
 }
@@ -251,9 +233,6 @@
     font-family: Open Sans;
     font-style: normal;
     font-size: 16px;
-
-    /* identical to box height */
-
     color: #FFFFFF;
 }
 
@@ -286,15 +265,10 @@
     position: absolute;
     width: 79px;
     height: 28px;
-
-    /* Body/Body Regular */
-
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    /* identical to box height, or 175% */
-
     color: #2395FF;
 }
 
@@ -320,18 +294,13 @@
 .exclusive_text_mob{
     display: none;
 }
-
 .exclusive_text{
     position: relative;
     padding-top: 6px; 
-
-    /* Body/Body Regular */
-
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    /* identical to box height, or 175% */
     color: #FFFFFF;
 }
 
@@ -341,7 +310,6 @@
     height: 0px;
     left: 360px;
     top: 92px;
-
 
     border: 1px solid #4E4E4E;
     transform: rotate(90deg);
@@ -366,8 +334,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-    /* identical to box height, or 169% */
-
     color: #FFFFFF;
 }
 
@@ -380,16 +346,13 @@
 .films_png{
     border-radius: 3px;
 }
-
 .films_text{
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-
     width: 100px;
     text-align: center;
-
     padding-right: 34px;
     color: #FFFFFF;
 }
@@ -428,13 +391,10 @@
     position: absolute;
     width: 322px;
     height: 22px;
-
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    /* identical to box height */
-
     color: #FFFFFF;
 }
 
@@ -443,13 +403,10 @@
     width: 230px;
     height: 22px;
     left: 820px;
-
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-    /* identical to box height, or 169% */
-
     color: #FFFFFF;
 }
 
@@ -467,9 +424,7 @@
 }
 .sales_png{
     position: absolute;
-    margin-top: 4px;
-    /* margin-left: 20.11px;    */
-    
+    margin-top: 4px;    
 }
 .age_png{
     position: absolute;
@@ -490,7 +445,6 @@
     height: 243px;
     left: 200px;
     top: 32px;
-
     opacity: 0.5;
     filter: blur(12px);
 }
@@ -501,9 +455,6 @@
     height: 0px;
     left: 80px;
     top: 92px;
-
-    /* BW/Grey */
-
     border: 1px solid #4E4E4E;
     transform: rotate(90deg);
 }
@@ -513,9 +464,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    /* identical to box height, or 175% */
-
-
     color: #FFFFFF;
 }
 
@@ -528,7 +476,6 @@
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
-
     color: #FFD362;
 }
 
@@ -546,30 +493,20 @@
     height: 65px;
     left: 624px;
     top: 120px;
-
-    /* Headings/Heading 1 Bold */
-
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 48px;
-
-    /* Colored/Primary Yellow */
-
     color: #FFD362;
 }
 
 .age_text{
     position: absolute;
     margin: 132px 0px 3.62px 8px;
-    /* Caption/Caption Bold */
-
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 10px;
-    /* BW/Main black */
-
     color: #0E0E0E;
 }
 
@@ -579,9 +516,6 @@
     font-style: normal;
     font-weight: bold;
     font-size: 10px;
-    /* identical to box height */
-    
-    
     color: #FFFFFF;    
     margin-top: 131px;
     margin-left: 43.11px;
@@ -635,8 +569,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    /* identical to box height, or 175% */
-
     color: #FFFFFF;
 }
 
@@ -652,7 +584,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    /* identical to box height, or 175% */
     margin-top: 58px; 
     color: #FFD362;
 }
@@ -665,8 +596,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
-    /* identical to box height, or 175% */
-
     color: #FFFFFF;
 }
 
@@ -674,8 +603,6 @@
     width: 217px;
     height: 0px;
     top: 142px;
-    /* BW/Grey */
-
     border: 1px solid #4E4E4E;
 }
 
@@ -688,7 +615,6 @@
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-    /* identical to box height */
     color: #FFFFFF;
 }
 
@@ -696,7 +622,6 @@
     font-size: 24px;
     padding-top: 21px; 
 }
-
 
 
 @media only screen and (max-width: 380px) {
